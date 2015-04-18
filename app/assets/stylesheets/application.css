@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_tree .
+ *= require_self
+ */
+
+ .header{
+ 	background-color:cornflowerBlue;
+ 	height:50px;
+ }
+
+ .headerelement{
+ 	color: red;
+ 	font-size: 20px; 
+
+ }
+
+ 
+ .sizeli{
+ 	
+ 	font-size: 20px;
+ 	
+ }
+ 
+ .sizeul{
+ 	font-size: 24px;
+    color: green ;
+    margin-top: 10px;
+  }
+
+  
+
+.main{
+ 	height: 700px;
+ 	
+ 	
+ }
+
+
+.sidebar{
+	height: 700px;
+ 	
+ 	background-color: Peru   ;
+ 	
+ }
+
+.maincontent{
+	height: 700px;
+ 
+ }
+ .lblcolor{
+ 	color: DarkRed;
+ 	font-size: 20px;
+ }
+  .textboxwidth{
+  	width: 400px;
+  }
+
+  .topmargin{
+  	margin-top: 10px;
+  }
+  .btn{
+  	border-width: 2px;
+    background-color: #C0C0C0 ;
+    border-color: red;
+  }
+
+  .familyfont{
+  	font-family: times new roman;
+  }
+
+  .btncolor{
+  	color: Green;
+  }
+  .backcolor
+  {
+    background-color: DarkOrchid ; 
+  }
+
+  .color{
+    color: DarkOrchid ;
+  }
+
+  .txtboxborder{
+    border-width: 2px;
+    
+    border-color: #344195;
+  }
+
+  .txtcolor{
+    color: #90950E;
+  }
+

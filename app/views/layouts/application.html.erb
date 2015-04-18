@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hms</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="header col-md-12" id= "header">
+
+ <span class="pull-right" style=" padding-top: 15px;">
+  <a href="" class="headerelement"> Home </a>
+  <a href="" class="headerelement"> About Us </a>
+  <a href="" class="headerelement"> LOgin </a>
+
+ 
+</span>
+
+</div>
+
+
+<div class="col-md-12 main">
+<div class="col-md-2 sidebar">
+	
+<ul id="Menu">
+	   <li>
+	     <a href="#" class="sizeul familyfont" style="color:Blue ">Registration</a>
+	       <ul>
+			  <li>
+				<a href="doctors/new" class="sizeli familyfont" style="color:Green ">Doctor </a>
+			  </li>
+			  <li>
+			    <a href="#" class="sizeli familyfont" style="color:Green ">Patient</a>
+			   </li>
+			   <li>
+			     <a href="#" class="sizeli familyfont" style="color:green">Nurse</a>
+			     </li>
+			</ul>
+		</li>
+		<li>
+		   <a href="#" class="sizeul familyfont" style="color:blue">Parent 2</a>
+		     <ul>
+		       <li>
+		          <a href="#" class="sizeli familyfont" style="color:green">Child D</a>
+		        </li>
+		        <li>
+		          <a href="#" class="sizeli familyfont" style="color:green">Child E</a>
+		        </li>
+		        <li>
+		           <a href="#" class="sizeli familyfont" style="color:green">Child F</a>
+		        </li>
+		     </ul>
+		</li>
+	</ul>
+
+</div>
+
+<div class="col-md-10 maincontent">
+
+<%= yield %>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

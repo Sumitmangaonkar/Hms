@@ -1,0 +1,66 @@
+<%= form_for @patient, :html => { :class => "form-horizontal patient" } do |f| %>
+
+    <% if @patient.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@patient.errors.count, "error") %> prohibited this patient from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @patient.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :Name, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Name, :class => 'form-control textboxwidth topmargin txtboxborder' %>
+    </div>
+    <%= error_span(@patient[:Name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Address, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Address, :class => 'form-control textboxwidth topmargin txtboxborder' %>
+    </div>
+    <%= error_span(@patient[:Address]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Mobile_No, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Mobile_No, :class => 'form-control textboxwidth topmargin txtboxborder' %>
+    </div>
+    <%= error_span(@patient[:Mobile_No]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Visit_To_Doctor, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Visit_To_Doctor, :class => 'form-control textboxwidth topmargin txtboxborder' %>
+    </div>
+    <%= error_span(@patient[:Visit_To_Doctor]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Gender, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Gender, :class => 'form-control textboxwidth topmargin txtboxborder ' %>
+    </div>
+    <%= error_span(@patient[:Gender]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Age, :class => 'control-label lblcolor topmargin' %>
+    <div class="controls">
+      <%= f.text_field :Age, :class => 'form-control textboxwidth topmargin txtboxborder' %>
+    </div>
+    <%= error_span(@patient[:Age]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary topmargin color' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel ")),
+            patients_path, :class => 'btn btn-default topmargin color' %>
+
+<% end %>
